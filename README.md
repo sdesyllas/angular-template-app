@@ -1,7 +1,7 @@
 # Angular Template Project
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
-This is a starting template bundled with bootstrap 3 to be used as a start up project template
+This is a starting template bundled with [bootstrap 3](http://getbootstrap.com/) to be used as a start up project template
 
 ## Development server
 
