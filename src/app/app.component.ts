@@ -8,15 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   visible = true;
   clickLogs = [];
-  increment = 0;
 
   onToggleParagraph() {
     this.visible = !this.visible;
-    this.increment++;
-    this.clickLogs.push(this.increment);
+    this.clickLogs.push(this.clickLogs.length);
   }
 
-  getColor() {
-    return this.increment >= 5 ? "blue" : "transparent";
+  getColor(clickLog) {
+    return clickLog >= 5 ? "blue" : "transparent";
   }
 }

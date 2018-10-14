@@ -15,9 +15,9 @@
             <button class="btn btn-primary" (click)="onToggleParagraph()">Display Details</button>
             <p *ngIf="this.visible">Secret Password = tuna</p>
 
-            <p *ngFor="let clickLog of clickLogs" 
+            <div *ngFor="let clickLog of clickLogs" 
                 [ngStyle]="{ backgroundColor: getColor(clickLog)}"
-                [ngClass]="{ whiteText: this.increment >= 5 }">{{ clickLog }}</p>
+                [ngClass]="{ whiteText: clickLog >= 5 }">{{ clickLog }}</div>
         </div>
     </div>
 </div>
